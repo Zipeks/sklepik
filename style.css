@@ -2,6 +2,7 @@ body {
    box-sizing: border-box;
    margin: 15px;
    font-family: 'Outfit', sans-serif;
+   background-color: #fafafa;
 }
 a {
    text-decoration: none;
@@ -15,38 +16,41 @@ a {
    height: 96vh;
    width: 96vw;
 }
+
+.searchBar {
+   float: left;
+   width:35%;
+   max-width: 80%;
+   background-color: #fafafa;
+   border-radius: 15px;
+   text-align: left;
+   margin-top: -7px;
+}
+.searchBar img {
+   position: relative;
+   top: 5px;
+}
+.searchBar input {
+   outline: none;
+   border: none;
+   width: 70%;
+   height: 40px;
+   background-color: transparent;
+   font-size: 1.3rem;
+   padding-left: 10px;
+}
 nav {
    grid-column: 2/7;
    grid-row: 1;
    text-align: right;
    margin-top: 1%;
 }
-.searchBar {
-   float: left;
-   min-width: 20%;
-   width:45%;
-   max-width: 80%;
-   background-color: #fafafa;
-   border-radius: 15px;
-
-}
-.searchBar img {
-   position: relative;
-   top: 3px;
-   left: -30px;
-}
-.searchBar input {
-   outline: none;
-   border: none;
-   width: 85%;
-   height: 40px;
-   background-color: transparent;
-   font-size: 1.3rem;
-   padding-left: 0px;
-}
-
 nav > a {
    margin-left: 15px;
+   padding-bottom: 7px;
+}
+nav > a:hover {
+   border-bottom: 2px solid black;
 }
 nav > a > img {
    height: 32px;
@@ -58,6 +62,26 @@ nav > a > img {
    grid-row: 1/3;
    display: flex;
    flex-direction: column;
+   padding-left: 15px;
+}
+.sidebar > a > img,
+.sidebar > div > a > img {
+   height: 1.3rem;
+   width: 1.3rem;
+   margin-right: 15px;
+}
+.sidebar a {
+   font-size: 1.25rem;
+   line-height: 50px;
+   font-weight: 400;
+}
+.sidebar h1 {
+   font-size: 2.5rem;
+}
+
+.helpCenter a {
+   position: absolute;
+   bottom: 20px;
 }
 main {
    margin-top: 15px;
