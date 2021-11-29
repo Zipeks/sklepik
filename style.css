@@ -63,7 +63,7 @@ nav {
    margin-bottom: -10px;
 }
 
-@media (max-width:1200px) {
+@media (max-width:1350px) {
    .page {
       display: flex;
       flex-direction: column;
@@ -95,6 +95,7 @@ nav {
    }
 }
 .sidebar {
+   position: fixed;
    grid-column: 1;
    grid-row: 1/3;
    display: flex;
@@ -120,14 +121,15 @@ nav {
    font-size: 2.5rem;
 }
 
-.helpCenter a {
-   position: absolute;
+.helpCenter  {
+   position: fixed;
    bottom: 20px;
 }
 
 
-@media (max-width:1200px) {
+@media (max-width:1350px) {
    .sidebar {
+      position: static;
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
@@ -139,6 +141,9 @@ nav {
    }
    .sidebarLinks a {
       margin-left: 0.5rem;
+   }
+   .helpCenter {
+      position: static;
    }
 }
 
@@ -159,13 +164,18 @@ main {
 .column {
    display: flex;
    flex-direction: column;
+   padding-bottom: 2%;
    gap: 4%;
 }
 
+.column img {
+   
+}
 .row {
    display: flex;
    flex-direction: row;
    gap: 4%;
+   
 }
 main > div > a > img {
    cursor: pointer;
